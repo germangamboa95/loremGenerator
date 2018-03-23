@@ -1,0 +1,22 @@
+.parallax-container{
+  background-color: red;
+  background-image: url('https://images.pexels.com/photos/48898/wood-cube-abc-cube-letters-48898.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .75;
+}
+
+.parallax-container h1,
+.parallax-container h5{
+  font-weight: bold;
+}
+
+#text{
+  margin-top: 2em;
+  padding: 1em;
+  margin-bottom: 2em;
+  min-height: 50vh;
+  text-align: center;
+
+}
