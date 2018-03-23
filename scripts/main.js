@@ -19,7 +19,7 @@ let generateText = (num) => {
 }
 
 let generateElement = (text) => {
-  let markUp = `<div>${text}</div>`;
+  let markUp = `<div id="just-text">${text}</div> <div><a id="copy-btn" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">content_copy</i></a></div>`;
   return markUp;
 }
 
@@ -37,7 +37,21 @@ document.getElementById('subs').addEventListener(
     let val = document.getElementById('test5').value;
     console.log(val);
     mountElement(generateElement(generateText(val)));
-
-
+    loadCopyBtn();
   }
 );
+
+let loadCopyBtn = () => {
+  document.getElementById('copy-btn').addEventListener(
+    'click',
+    () => {
+      let hackyInput = document.getElementById('why');
+      let copyText = document.getElementById('just-text').innerText;
+      hackyInput.value = copyText;
+      console.log(hackyInput);
+      hackyInput.select();
+      document.execCommand("Copy");
+
+
+  });
+}

@@ -5,13 +5,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   opacity: .75;
+  max-height: 18.75em;
 }
 
 .parallax-container h1,
 .parallax-container h5{
   font-weight: bold;
 }
-
+#pos-rel{
+  position: relative;
+}
 #text{
   margin-top: 2em;
   padding: 1em;
@@ -19,4 +22,19 @@
   min-height: 50vh;
   text-align: center;
 
+}
+
+footer p {
+  padding-bottom: 1em;
+}
+
+#why{
+  position: absolute;
+  top: -100%;
+}
+
+#copy-btn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
